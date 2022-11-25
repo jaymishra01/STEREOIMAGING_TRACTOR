@@ -1,0 +1,1 @@
+ros2 run usb_cam usb_cam_node_exe --ros-args --remap __ns:=/left_camera --params-file /home/ecsperception/ros2_ws/src/tafe_sensors/config/params_left_cam.yaml
