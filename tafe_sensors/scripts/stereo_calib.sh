@@ -3,5 +3,5 @@ ros2 run camera_calibration cameracalibrator \
   --square=0.025 \
   --approximate=0.3 \
   --no-service-check \
-  --ros-args --remap /left:=/leftcamera/image_raw \
+  --ros-args --remap /left:=/left_camera/image_raw \
   --remap /right:=/right_camera/image_raw

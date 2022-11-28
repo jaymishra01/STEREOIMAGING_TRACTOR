@@ -1,0 +1,1 @@
+ros2 run image_proc image_proc --ros-args --remap /image:=/left_camera/image_raw /camera_info:=/left_camera/camera_info
