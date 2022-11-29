@@ -152,7 +152,7 @@ def generate_launch_description():
             description='Bound on normalized pixel values'
         ),
         DeclareLaunchArgument(
-            name='correlation_window_size', default_value='15',
+            name='correlation_window_size', default_value='5',
             description='SAD correlation window width in pixels (must be odd)'
         ),
         DeclareLaunchArgument(
@@ -164,15 +164,15 @@ def generate_launch_description():
             description='Number of disparities to search in pixels (must be a multiple of 16)'
         ),
         DeclareLaunchArgument(
-            name='texture_threshold', default_value='10',
+            name='texture_threshold', default_value='10000',
             description='Filter out if SAD window response does not exceed texture threshold'
         ),
         DeclareLaunchArgument(
-            name='speckle_size', default_value='100',
+            name='speckle_size', default_value='1',
             description='Reject regions smaller than this size in pixels'
         ),
         DeclareLaunchArgument(
-            name='speckle_range', default_value='4',
+            name='speckle_range', default_value='2',
             description='Maximum allowed difference between detected disparities'
         ),
         DeclareLaunchArgument(
@@ -181,7 +181,7 @@ def generate_launch_description():
                         '(Semi-Global Block Matching only)'
         ),
         DeclareLaunchArgument(
-            name='uniqueness_ratio', default_value='15.0',
+            name='uniqueness_ratio', default_value='3.0',
             description='Filter out if best match does not sufficiently exceed the next-best match'
         ),
         DeclareLaunchArgument(
